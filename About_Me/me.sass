@@ -1,0 +1,367 @@
+/*Zmienne*/
+$primary-color: #ff7373
+$second-color: #fcfffc
+$third-color: rgba(255, 255, 255, 0.5)
+$text-color: rgba(0, 40, 70, 1)
+$box-radius: 10px
+$position: center
+
+*
+  margin: 0
+  padding: 0
+  list-style: none
+  text-decoration: none
+  box-sizing: border-box
+  
+nav
+  padding: 25vh 2.5rem
+  position: fixed
+  background: rgba(20, 20, 20, 0.5)
+  height: 100vh
+  backdrop-filter: blur(1rem)
+  border-right: 0.4375rem solid $second-color
+ 
+@mixin fontList
+  font-family: "RalewayItalic", sans-serif
+  font-size: 1.875rem
+  margin-bottom: 1.25rem
+  color: $second-color
+  border-left: 0.1875rem solid $primary-color
+
+@mixin BackGroud
+  width: 100vw
+  height: 100vh
+  overflow: scroll
+  background-image: linear-gradient( 111.1deg,  rgba(0,40,70,1) -4.8%, rgba(255,115,115,1) 82.7%, rgba(255,175,123,1) 97.2% )
+
+@mixin text($size, $colortext)
+  font-size: $size
+  color: $colortext
+  font-family: 'RalewayItalic', sans-serif
+  margin-bottom: 1.25rem
+  border-left: 0.1875rem solid $primary-color
+
+
+@media only screen and (min-width: 1441px)
+  %interests
+    width: 10%
+    height: auto
+    float: left
+    margin-right: 3%
+
+  .brain
+    @extend %interests
+
+  .computer
+    @extend %interests
+
+  .photo
+    @extend %interests   
+
+  .me
+    width: 15%
+    @extend %interests
+    
+  .wrap
+    margin-right: 5%
+    margin-left: 25%
+    margin-bottom: 5%
+    padding-bottom: 5%
+    padding-left: 1%
+    text-align: justify
+    color: $text-color
+    background: $third-color
+    border-radius: $box-radius 
+  
+  .title 
+    h1
+      @include text(2.5rem, $second-color)  
+
+  .title 
+    span
+      color: $primary-color
+    
+  .list 
+    li
+      @include fontList
+      padding-left: 0.3125rem
+    
+  .list 
+    a
+      color: $second-color
+  
+  .list 
+    li:hover
+      @include fontList
+      padding-left: 0.625rem
+    
+  .back
+    @include BackGroud  
+
+@media only screen and (min-width: 1025px) and (max-width: 1920px)
+
+  %interests2
+    width: 10%
+    height: auto
+    float: left
+    margin-right: 3%
+
+  .brain
+    @extend %interests2
+
+  .computer
+    @extend %interests2
+    
+  .photo
+    @extend %interests2 
+
+  .me
+    width: 25%
+    @extend %interests2
+    
+  .wrap
+    margin-right: 5%
+    margin-left: 25%
+    margin-bottom: 5%
+    padding-bottom: 7%
+    padding-left: 5%
+    padding-right: 5%
+    padding-top: 2%
+    font-size: 1.3rem
+    text-align: justify
+    color: $text-color
+    background: $third-color
+    border-radius: $box-radius
+  
+  .title 
+    h1
+      @include text(2.5rem, $second-color)  
+
+  .title 
+    span
+      color: $primary-color
+    
+  .list 
+    li
+      @include fontList
+      padding-left: 0.3125rem
+    
+  .list 
+    a
+      color: $second-color
+     
+  .list 
+    li:hover
+      @include fontList
+      padding-left: 0.625rem  
+
+  .back
+    @include BackGroud
+    
+@media only screen and (min-width: 769px) and (max-width: 1024px) 
+
+  %interests3
+    width: 25%
+    height: auto
+    float: left
+    margin-right: 3%
+
+  .brain
+    @extend %interests3
+
+  .computer
+    @extend %interests3
+    
+  .photo
+    @extend %interests3
+
+  .me
+    @extend %interests3
+    width: 45%
+
+  .wrap
+    margin-right: 5%
+    margin-left: 40%
+    margin-bottom: 5%
+    padding: 5%
+    text-align: justify
+    color: $text-color
+    background: $third-color
+    border-radius: $box-radius
+  
+  .title 
+    h1
+      @include text(2.5rem, $second-color)
+    
+  .title 
+    span
+      color: $primary-color
+     
+  .list 
+    li
+      @include fontList
+      padding-left: 0.3125rem
+     
+  .list 
+    a
+      color: $second-color
+     
+  .list 
+    li:hover
+      @include fontList
+      padding-left: 0.625rem
+    
+  .back
+    @include BackGroud
+    
+@media only screen and (min-width: 425px) and (max-width: 768px) 
+
+  .item 
+    align-items: $position
+    justify-content: $position
+    margin: 50px auto
+    max-width: 800px
+    width: 100%
+    text-align: $position
+
+  .brain, .computer, .photo
+    width: 15%
+    
+  .me
+    margin-top: 5%
+    width: 100%
+
+  .container 
+    height: 100%
+    width: 100%
+    overflow-y: auto
+  
+  .wrap
+    margin-right: 10%
+    margin-left: 10%
+    margin-bottom: 5%
+    padding: 20px
+    text-align: $position
+    color: $text-color
+    background: $third-color
+    border-radius: 10px
+  
+  .title 
+    h1
+      @include text(2.5rem, $second-color)    
+  
+  .title 
+    span
+      color: $primary-color
+      
+  .list 
+    li
+      @include fontList
+      padding-left: 0.3125rem
+      
+  .list 
+    a
+      color: $second-color
+     
+  .list 
+    li:hover
+      @include fontList
+      padding-left: 0.625rem   
+  
+  nav
+    left: -275px
+    transition: all 0.1s ease
+    z-index: 99999999  
+  
+  nav:hover
+    left: 0
+    transition: all 0.1s ease
+    z-index: 99999999
+  
+  .back
+    @include BackGroud
+
+@media only screen and (min-width: 320px) and (max-width: 424px)
+
+  .item 
+    align-items: $position
+    justify-content: $position
+    margin: 50px auto
+    max-width: 800px
+    width: 100%
+    text-align: $position
+
+  .brain, .computer, .photo
+    width: 15%
+    
+  .me
+    margin-top: 5%
+    width: 100%
+
+  .container
+    height: 100%
+    width: 100%
+    overflow-y: auto
+
+  .wrap
+    margin-right: 10%
+    margin-left: 10%
+    margin-bottom: 5%
+    padding: 20px
+    text-align: $position
+    color: $text-color
+    background: $third-color
+    border-radius: 10px  
+  
+  .title 
+    h1
+      @include text(2.5rem, $second-color)  
+  
+  .title 
+    span
+      color: $primary-color
+    
+  .list 
+    li
+      @include fontList
+      padding-left: 0.3125rem  
+  
+  .list 
+    a
+      color: $second-color
+    
+  .list 
+    li:hover
+      @include fontList
+      padding-left: 0.625rem
+    
+  nav
+    left: -275px
+    transition: all 0.1s ease
+    z-index: 99999999
+    
+  nav:hover
+    left: 0
+    transition: all 0.1s ease
+    z-index: 99999999
+  
+  .back
+    @include BackGroud
+
+@font-face 
+  font-family: "RalewayRegular"
+  src: url("fonts/static/Raleway-Regular.ttf") format("truetype")
+  font-style: normal
+  font-weight: normal
+
+@font-face  
+  font-family: "RalewayItalic"
+  src: url("fonts/static/Raleway-Italic.ttf") format("truetype")
+  font-style: normal
+  font-weight: normal
+ 
+@font-face  
+  font-family: "RalewaySemiBold" 
+  src: url("fonts/static/Raleway-SemiBold.ttf") format("truetype")
+  font-style: normal
+  font-weight: normal

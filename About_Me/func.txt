@@ -1,0 +1,2 @@
+@function text($size, $colortext)
+  @return unquote("font-size: $size\n") unquote("color: $colortext\n") unquote("font-family: 'RalewayItalic', sans-serif\n") unquote("margin-bottom: 1.25rem\n") unquote("border-left: 0.1875rem solid $primary-color")

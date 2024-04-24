@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"; href="nav.css"; type="text/css">
+    <style type="text/css">
+        .footer{
+            background: rgba(0,0,0,0.7);
+            border: 1px;
+            width: 100%;
+            height: 70px;
+            position:absolute;
+            top:90%;
+            left:0%;
+            color: white;}
+            .reg{
+                background: rgba(205,92,92,0.7);
+                border: 1px;
+                width: 400px;
+                height: 400px;
+                color: white;
+                position:absolute;
+                left:35%;
+                top:15%;
+            }
+
+    </style>
+    <title>Регистрация</title>
+</head>
+<body background="слайд4.jpg">
+<nav>
+    <img src="logo.png" height="24%" width="24%" align="left"/>
+
+    <ul>
+        <li><a href="vhod.html">Войти</a> </li>
+        <li><a href="registraciya.html">Регистрация</a> </li>
+        <li><a href="Svyaz.html">Связаться с нами</a> </li>
+        <li><a href="Uslugi.html">Услуги</a> </li>
+        <li><a href="ONAS.html">О нас</a> </li>
+        <li><a href="index.html">Главная</a></li>
+    </ul>
+</nav>
+<div class="reg" align="center">
+<form action="http://localhost/Prac/registraciya.php" method="post">
+    <p><h2 >Форма регистрации:</h2></p>
+    <br>
+    <input type="text" name="name" required placeholder="Имя">
+    <br>
+    <br>
+    <input type="text" name="surname" required placeholder="Фамилия">
+    <br>
+    <br>
+    <input type="text" name="tel" required placeholder="+380__">
+    <br>
+    <br>
+    <input type="text" name="E-mail" required placeholder="___@gmail.com">
+    <br>
+    <br>
+    <input type="password" name="password" required placeholder="Пароль">
+    <br>
+    <br>
+    <input style="height: 20%" type="submit" value="Зарегистрироваться" name="button1">
+</form>
+</div>
+<div class="footer">
+    <img src="logo.png" height="100%" width="25%" align="left"/>
+    <h3 style="position:absolute; left: 30%"><b style="color: crimson">Телефон:</b> +380978417232 </h3>
+    <h3 style="position:absolute; left: 47%"><b style="color: crimson">Адрес:</b> г. Киев</h3>
+    <h3 style="position:absolute; left: 58%"><b style="color: crimson">Почта:</b> contact@virgowebdesign.com</h3>
+    <h3 style="position:absolute; left: 80%"><b style="color: crimson">Директор:</b> Лойчик Валерия</h3>
+</div>
+</body>
+</html>
